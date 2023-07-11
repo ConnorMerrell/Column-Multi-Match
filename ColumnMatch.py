@@ -20,7 +20,7 @@ for i in (y_values):
 
 finaldf = pd.DataFrame(finallist)
 
-finaldf.to_csv("list.csv", index=False, header=None)
+finaldf.to_csv("list.csv", index=False, header=[y,x])
 print("done")
 
 
