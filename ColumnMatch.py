@@ -15,8 +15,12 @@ finallist = []
 
 for i in (y_values):
     df2 = df[df[y].isin([i])]
-    #print(i + " = " + str(df2[x].tolist()))
-    finallist.append([i,str(df2[x].tolist())])
+    listmatch = df2[x].tolist()
+    listmatch = sorted(listmatch)
+    print(listmatch)
+    finallist.append([i,listmatch])
+
+
 
 finaldf = pd.DataFrame(finallist)
 
