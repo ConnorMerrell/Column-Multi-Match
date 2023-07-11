@@ -18,7 +18,6 @@ for i in (y_values):
     listmatch = df2[x].tolist()
     listmatch = sorted(listmatch)
     listmatch = ", ".join(listmatch)
-    print(listmatch)
     finallist.append([i,listmatch])
 
 
