@@ -17,6 +17,7 @@ for i in (y_values):
     df2 = df[df[y].isin([i])]
     listmatch = df2[x].tolist()
     listmatch = sorted(listmatch)
+    listmatch = ", ".join(listmatch)
     print(listmatch)
     finallist.append([i,listmatch])
 
@@ -26,7 +27,6 @@ finaldf = pd.DataFrame(finallist)
 
 finaldf.to_csv("list.csv", index=False, header=[y,x])
 print("done")
-
 
 
 
